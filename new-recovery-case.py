@@ -1,0 +1,12 @@
+import subprocess
+learnerName = input('Learner name: ')
+learnerID = input('Person ID: ')
+cohortDate = input('Date checked out: ')
+cohortCity = input('Cohort location (city): ')
+cohortNetwork = input('Cohort network: ')
+deviceSerial = input('Device serial number: ')
+caseDescription = (f'Learner checked out device {deviceSerial} on {cohortDate} in {cohortCity} ({cohortNetwork}) on {cohortDate} and did not return.')
+print(caseDescription)
+print(learnerID)
+print(learnerName)
+subprocess.run("clip", text=True, input=caseDescription)
