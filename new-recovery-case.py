@@ -9,5 +9,4 @@ caseDescription = (f'Learner checked out device {deviceSerial} on {cohortDate} i
 print(caseDescription)
 print(learnerID)
 print(learnerName)
-subprocess.run("clip", text=True, input=caseDescription)
 subprocess.run("pbcopy", text=True, input=f'{caseDescription} \n {learnerName} \n {learnerID}')
